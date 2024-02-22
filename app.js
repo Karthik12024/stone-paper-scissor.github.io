@@ -17,7 +17,7 @@ const genCompChoice = () => {
 
 const drawGame = () => {
   msg.innerText = "Game was Draw. Play again.";
-  msg.style.backgroundColor = "#081b31";
+  msg.style.backgroundColor = "black";
 };
 
 const showWinner = (userWin, userChoice, compChoice) => {
@@ -72,4 +72,6 @@ reset.addEventListener("click", () => {
   compScore = 0;
   userScorePara.innerText = userScore;
   compScorePara.innerText = compScore;
+  msg.innerText = `Result`;
+  msg.style.backgroundColor = "#081b31";
 });
